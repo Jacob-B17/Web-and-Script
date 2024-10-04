@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, monospace; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4;     
+}
+
+/*Creates the headers background and text colour*/
+header {
+    background: rgb(200, 217, 237); 
+    color: rgb(70, 99, 172); 
+    padding: 10px; 
+}
+
+/*This part is the header where I have the home, about, contact and project links.*/
+/*This allows all of them to be lined up along the header and no longer stack and evenly space them out*/
+#header {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+/*I removed the line that apears under the links so that it looks cleaner*/
+#header a {
+    text-decoration: none; 
+    color: rgb(70, 99, 172); 
+    font-weight: bold; 
+    padding: 10px; 
+}
+
+/*This will create a little box around the header link when you hover over it*/
+#header a:hover {
+    color: #007bff; 
+}
+
+.centre {
+    text-align: center;
+    margin: auto; 
+    width: 50%; 
+    padding: 10px; 
+}
+
+/*##############################################################*/
+
+/* Banners height margin*/
+/*Uses a gradient matching the header colour and tranistions to white*/
+#banner {
+    height: 120px; 
+    margin: auto;
+    background: linear-gradient(to bottom, rgb(200, 217, 237), white);
+    border-radius: 15px;
+}
+
+/*Creates title colour and size*/
+#banner h1 {
+    margin: 0;
+    font-size: 40px; 
+    color: rgb(70, 99, 172);
+}
+
+/*##############################################################*/
+
+/* Creates a flexbox that contains text, photos etc. I also gave it a background colour and rounded corners */
+/*Uses a gradient starting as white and tranistions to the footer colour*/
+.profile-container {
+    display: flex; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    max-width: 800px; 
+    margin: 10px auto;
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/*Sets the width for the photo*/
+.profile-image {
+    flex: 0 0 200px; 
+    margin-right: 20px; 
+}
+
+.profile-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/*Creates the flexbox for the text on the right side*/
+#right-column {
+    flex: 1; 
+    background: white; 
+    color: rgb(70, 99, 172);
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/*Centres the vid to the middle of the flexbox*/
+#intro-vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    margin: 10px; 
+}
+
+/*##############################################################*/
+
+/*Creates a flex box used for the project page, here i have it so all the items will stack vertically and centres them*/
+/*Uses a gradient starting as white and tranistions to the footer colour*/
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 800px; 
+    margin: 10px auto; 
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/*This section is used to centre the image in the flexbox, takes up the whole space so it is big enough to see and spaces it from the text*/
+.network-image {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+/*This is used to make sure the image does not go past the box*/
+.network-image img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/*Centres the text below the image while making sure it takes up the whole width while still having some padding*/
+.description {
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 100%; 
+    padding: 0 20px; 
+    width: 700px; 
+    height: 175px; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+/*Creates space between the two sections in my description for better readability */
+.description section {
+    margin-bottom: 20px; 
+}
+
+/*Second image on my projects page*/
+.network-image_2 {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+/*This is used to make sure the image does not go past the box*/
+.network-image_2 img {
+    max-width: 100%;
+    height: auto; 
+}
+/*Centres the text below the image while making sure it takes up the whole width while still having some padding*/
+.description_2 {
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 100%; 
+    padding: 0 20px; 
+    width: 700px; 
+    height: 250; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px;  
+}
+/*Creates space between the two sections in my description for better readability */
+.description_2 section {
+    margin-bottom: 20px; 
+}
+
+/*##############################################################*/
+
+/*Creates the flexbox for my home page*/
+.intro-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 10px auto;
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
+    border-radius: 8px; 
+    padding: 20px; 
+    flex-grow: 1; 
+}
+
+#feedback-wrapper {
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 100%; 
+    padding: 0 20px; 
+    width: 700px; 
+    height: 175px; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/*Image for my home page*/
+.logo-image img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+/*Text for my home page*/
+.intro_description {
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 90%; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 8px; 
+}
+
+/*##############################################################*/
+
+/*creates the flexbox for the contact page*/
+.feedback-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 10px auto;
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
+    border-radius: 8px; 
+    padding: 20px; 
+    flex-grow: 1;
+}
+
+/*Creates the white background for all of the form information to sit on top of.*/
+/*I stacked all of the section vertically for a clean look*/
+.form-box {
+    display: flex;
+    flex-direction: column; 
+    background-color: white; 
+    padding: 20px; 
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+/*Makes all the text stay to the left*/
+label {
+    margin-bottom: 5px; 
+    text-align: left; 
+}
+
+/*For the text boxes, Makes them all the same width, adds a border to the boxes and rounds the corners.*/
+input, textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+/*For the submit and reset button. Here I added my angle gradient, white text, while also rounding the corners of the button*/
+input[type="submit"], input[type="reset"] {
+    background-image: linear-gradient(to bottom right, #276AB3, rgb(200, 217, 237) ); /* Button color */
+    color: white; 
+    padding: 10px; 
+    border-radius: 4px; 
+    width: auto;
+    margin-top: 10px; 
+}
+
+/*##############################################################*/
+
+/*Designs the footer, creates the background, and also space out the email and copyright*/
+#footer {
+    background: rgb(200, 217, 237); 
+    color: rgb(70, 99, 172);
+    height: auto; 
+    width: 100%; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#footer h5 {
+    margin: 5px; 
+    flex-basis: 100%; 
+    text-align: center; 
+}

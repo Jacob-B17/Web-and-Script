@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jacob's Profile</title>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+</head>
+<body>
+    <header>
+        <nav id="header">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Me</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <div class="centre">
+        <div id="banner">
+            <h1>About Me</h1>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="IMG_4265.jpg" alt="Jacob's Photo">
+        </div>
+        <div id="right-column">
+            <h3>My name is Jacob. I am a second year student at Ontario Tech University. I am in the IT Networking and Information Security program. </h3>
+        </div>
+        <div id="intro-vid">
+            <video width="360" height="220" controls poster="aboutposter.png" preload="auto" muted id="myvid">
+                <source src="aboutvid.mp4" type="video/mp4">
+                <source src="aboutvid.ogv" type="video/ogg">
+            </video>
+            <br>
+            <button onclick="PlayPause()">Play/Pause Video</button>
+            <script>
+                var mybtn=document.getElementById("myvid");
+                function PlayPause()
+                {
+                    if(mybtn.paused)
+                        mybtn.play();
+                    else
+                        mybtn.pause();
+                }
+            </script>
+            <style>
+                button{
+                    background-color: white;
+                    color: rgb(70, 99, 172);
+                    height: 50px;
+                    border: 2px whitesmoke;
+                    border-radius: 5px;
+                }
+                button:hover
+                {
+                    background-color: rgb(70, 99, 172);
+                    color: white;
+                    border: 2px whitesmoke;
+                    border-radius: 5px;
+                }
+            </style>
+        </div>
+    </div>
+
+    <footer>
+        <address id="footer">
+            <h5>© 2024 by Jacob Bryan</h5>
+            <h5>jacob.bryan@ontariotechu.net</h5>
+        </address>
+    </footer>
+</body>
+</html>
