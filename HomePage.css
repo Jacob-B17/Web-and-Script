@@ -272,7 +272,7 @@ input, textarea {
 
 /*For the submit and reset button. Here I added my angle gradient, white text, while also rounding the corners of the button*/
 input[type="submit"], input[type="reset"] {
-    background-image: linear-gradient(to bottom right, #276AB3, rgb(200, 217, 237) ); /* Button color */
+    background-image: linear-gradient(to bottom right, #276AB3, rgb(200, 217, 237) ); 
     color: white; 
     padding: 10px; 
     border-radius: 4px; 
