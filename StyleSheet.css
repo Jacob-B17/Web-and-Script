@@ -303,3 +303,22 @@ input[type="submit"], input[type="reset"] {
     flex-basis: 100%; 
     text-align: center; 
 }
+
+
+/*This is the fluid design for tablet size*/
+@media (min-width: 481px) and (max-width: 959px) {
+    /*Turn my header into a column so that when compressed all the links are accessible */ 
+    #header {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/*This is the fluid design for moblie size*/
+@media (max-width: 480px) {
+    /*Turn my header into a column so that when compressed all the links are accessible */ 
+    #header {
+        align-items: center;
+        flex-direction: column;
+    }
+}
