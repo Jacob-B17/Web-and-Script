@@ -173,7 +173,7 @@ header {
     color: rgb(70, 99, 172); 
     width: 100%; 
     width: 700px; 
-    height: 250; 
+    height: 250px; 
     background: white; 
     border-radius: 8px; 
     padding: 20px;  
@@ -298,7 +298,7 @@ input[type="submit"], input[type="reset"] {
     align-items: center; 
 }
 
-#footer h5 {
+#footer p{
     margin: 5px; 
     flex-basis: 100%; 
     text-align: center; 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Jacob's Profile</title>
@@ -22,28 +22,28 @@
     <div class="feedback-container">
         <div class="feedback-wrapper">
             <div class="form-box"> 
-                <form action="mailto:jacob.bryan@ontariotechu.net" method="post" enctype="text/plain" ?subject=Mistakes name="form">
+                <form action="mailto:jacob.bryan@ontariotechu.net" method="post" enctype="text/plain" name="form">
                 <p>
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Your Complete Name" size="32" required>
+                    <input type="text" id="name" name="name" placeholder="Your Complete Name" size="32" required>
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Your Email Address" size="48" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" size="48" required>
                 </p>
                 <p>
                     <label for="comments">Comments</label>
-                    <textarea name="comments" cols="40" rows="8"></textarea>
+                    <textarea name="comments" id="comments" cols="40" rows="8"></textarea>
                 </p>
                 <p>
                     <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" placeholder="Your Phone Number" size="32" required>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number" size="32" required>
                 </p>
                 <p>
-                    <input type="submit" value="Click to submit the form"/>
+                    <input type="submit" value="Click to submit the form">
                 </p>
                 <p>
-                    <input type="reset" value="Click to reset the form"/>
+                    <input type="reset" value="Click to reset the form">
                 </p>
                 </form>
             </div> 
@@ -51,8 +51,8 @@
     </div>
     <footer>
         <address id="footer">
-            <h5>© 2024 by Jacob Bryan</h5>
-            <h5>jacob.bryan@ontariotechu.net</h5>
+            <p>© 2024 by Jacob Bryan</p>
+            <p>jacob.bryan@ontariotechu.net</p>
         </address>
     </footer>
 </body>
