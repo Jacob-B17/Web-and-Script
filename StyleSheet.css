@@ -325,6 +325,9 @@ input[type="submit"], input[type="reset"] {
         flex: 0 0 100%;
         margin: 0 0 20px;
     }
+    #banner h1 {
+        font-size: 2rem; 
+    }
     
 }
 
@@ -348,5 +351,8 @@ input[type="submit"], input[type="reset"] {
     .network-image, .network-image_2, .profile-image {
         flex: 0 0 100%;
         margin: 0 0 20px;
+    }
+    #banner h1 {
+        font-size: 2rem; 
     }
 }
