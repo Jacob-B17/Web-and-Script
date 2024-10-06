@@ -197,7 +197,6 @@ header {
     background: linear-gradient(to bottom, white, rgb(200, 217, 237));
     border-radius: 8px; 
     padding: 20px; 
-    flex-grow: 1; 
 }
 
 #feedback-wrapper {
