@@ -340,7 +340,7 @@ input[type="submit"], input[type="reset"] {
         align-items: center;
         flex-direction: column;
     }
-    .description, .description_2, .centre {
+    .description, .description_2, .centre, .intro_description{
         width: 33%;
     }
     /*Removes all the spacing so it will fit into the column*/
